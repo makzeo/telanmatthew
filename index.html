@@ -9,54 +9,90 @@
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <div class="portfolio-title">
+            <h1>My Portfolio</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="profile">
-            <img src="assets/picpic.jpg" alt="Your Name" class="profile-picture">
-        <div class="socials">
-            <a href="https://www.facebook.com/matthew.telan.1?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/in/mateo-ley-257945314"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/makzeo"><i class="fab fa-github"></i></a>
-        </div>
-            <p>Hello! I am a 3rd year BS Information System student.</p>
-        </div>
-    </section>
-    
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>React</li>
-        </ul>
-    </section>
-    
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="profile">
+                    <img src="picpic.jpg" alt="Your Name" class="profile-picture">
+                    <div class="socials">
+                        <a href="https://www.facebook.com/matthew.telan.1?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/mateo-ley-257945314"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/tlnmazeo?igsh=MW9hZ3J6MDhwcThlNA=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/makzeo"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p>Hello! I am a 3rd year BS Information System student from ACLC College of Taytay. I am currently living in Taytay, Rizal. I always work hard for my dreams to come true. I'll do anything to keep my career moving forward while helping others.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <img src="hmtl.png" alt="HTML5 Icon">
+                        <h3>HTML5</h3>
+                        <p>Average</p>
+                    </div>
+                    <div class="skill">
+                        <img src="css.png" alt="CSS3 Icon">
+                        <h3>CSS3</h3>
+                        <p>Average</p>
+                    </div>
+                    <div class="skill">
+                        <img src="javascript.png" alt="JavaScript Icon">
+                        <h3>JavaScript</h3>
+                        <p>Average</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <img src="recipe.jpg" alt="Project 1">
+                    <h3>Recipe API</h3>
+                    <p>I made a Recipe API to help people know what recipe to use when they're going to cook</p>
+                </div>
+                <div class="project">
+                    <img src="festival.jpg" alt="Project 2">
+                    <h3>Festival</h3>
+                    <p>2024 ACLC Academic Festival</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contact-form" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p> &copy; Telan Portfolio 2024</p>
-        </div>
     </footer>
 
     <script src="scripts.js"></script>
