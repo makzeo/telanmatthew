@@ -63,9 +63,9 @@ nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 30px;
-    height: 30px;
-    border-radius: 30%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
 }
@@ -148,6 +148,11 @@ footer .socials a {
     font-size: 1.5rem;
     transition: color 0.3s;
 }
+
+footer .socials a:hover {
+    color: #ddd;
+}
+
 
 footer .socials a:hover {
     color: #ddd;
