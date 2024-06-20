@@ -58,6 +58,18 @@ nav ul li a:hover {
     margin: 2rem 1rem;
 }
 
+.profile {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
 #projects {
     background: #d0d4d4;
     padding: 4rem 2rem;
